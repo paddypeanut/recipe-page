@@ -39,6 +39,12 @@ h2 {
     font-weight: 600;
 }
 
+.recipe-card__preparation__heading {
+    font-family: 'Outfit', sans-serif;
+    font-size:1.15rem;
+    color:var(--rose-800)
+}
+
 footer {
     width:100%;
     bottom:0;
