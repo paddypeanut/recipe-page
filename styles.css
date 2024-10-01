@@ -137,5 +137,8 @@ strong {
     .recipe-card__img {
         border-radius: 0;
     }
+    h1 {
+        font-size:2rem
+    }
     
 }
