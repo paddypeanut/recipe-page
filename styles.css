@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "Outfit";
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype') ;
+}
+
+@font-face {
+    font-family: "Young-serif";
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+:root {
+    --brown: hsl(14, 45%, 36%);
+    --rose-800:hsl(332, 51%, 32%);
+    --rose-50:hsl(330, 100%, 98%);
+    --stone-100:hsl(30, 54%, 90%);
+    --stone-150:hsl(30, 18%, 87%);
+    --stone-600:hsl(30, 10%, 34%);
+    --stone-900:hsl(24, 5%, 18%);
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--stone-100);
+    color:var(--stone-600)
+}
+
+h1,h2 {
+    font-family: 'Young-serif';
+}
+
+h1 {
+    color:var(--stone-900);
+    font-size: 2.5rem;
+    font-weight:400
+}
+
+h2 {
+    color:var(--brown);
+    font-weight: 600;
+}
+
+footer {
+    width:100%;
+    bottom:0;
+    left:0;
+    position:fixed
+}
+
+.recipe-card__wrapper {
+    background-color: white;
+    max-width: 46rem;
+    margin:5rem auto;
+    border-radius: 20px;
+}
+
+.recipe-card__content {
+    padding:0rem 2rem 1rem;
+}
+
+.recipe-card__img-wrapper {
+    padding:2rem
+}
+
+.recipe-card__img {
+    border-radius: 0.625rem;      
+}
+
+.recipe-card__preparation {
+    background-color: var(--rose-50);
+    border-radius: 0.625rem;
+    padding:1rem;
+    margin: 1.5rem 0 0;
+}
+
+.recipe-card__preparation h3 , .recipe-card__preparation .recipe-card__list-item::marker {
+    color: var(--rose-800)
+}
+
+.recipe-card__list,.recipe-card__ordered-list {
+    padding: 0 1.25rem;
+
+}
+.recipe-card__list-item,.recipe-card__ordered-list-item{
+    padding:0.25rem 1rem
+}
+
+.recipe-card__list-item::marker {
+    font-size:.625rem;
+    color:var(--brown)
+}
+
+.recipe-card__ordered-list-item::marker {
+    font-weight: 800;
+    color:var(--brown)
+}
+
+strong {
+    color:var(--brown);
+    font-weight: 800;
+}
+
+.recipe-card__table {
+    width:100%;
+    border-collapse: collapse;
+}
+
+.recipe-card__table tr, .recipe-card--bottom-border {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.recipe-card__table tr:last-child {
+    border-bottom:none
+}
+.recipe-card__table td {
+    padding:.5rem  1rem 
+}
+
+.recipe-card--spacing {
+    padding:1rem 0 1rem 0
+}
+
+@media screen and (max-width: 400px){
+
+    html {
+        font-size:14px
+    }
+
+    .recipe-card__wrapper {
+        width:100%;
+        margin:0;
+    }
+
+    .recipe-card__img-wrapper {
+        padding:0rem 0rem 1rem
+    }
+
+    .recipe-card__img {
+        border-radius: 0;
+    }
+    
+}
